@@ -1,0 +1,84 @@
+<div id="main">
+
+				<div id="head">
+
+					<div class="row">
+						<div id="mainbox" class="span5">	
+								<h3>Rocketing Towards The Future</h3>
+								<h5>UpStart is more then just a student organization: <em>It's a movement -</em> A movement that will spark Entrepreneurship and Innovation at the University of Toronto Scarborough.</h5><button class="btn">Learn More</button>
+						</div>
+					</div>
+				</div>
+
+				<section>
+					<div id="about">
+						<div class="tag-primary"><h5>What We Do</h5></div>
+
+						<div class="row-fluid">
+					        <div class="span3">
+					        	<%= image_tag("icon1.png", :alt => "icon1") %>
+					          <h4>UpStartSchool</h4>
+					          <p> UpstartSchool offers workshops and resources designed to equip students with the skills to build businesses and to go from ideation to execution.</p>
+					        </div>
+					        <div class="span3">
+					        	<%= image_tag("icon3.png", :alt => "icon3") %>
+					          <h4>AppStart</h4>
+					          <p>We work with our partners to familiarize students with the technical skills they need to build digital enterprises</p>
+					       
+					        </div>
+					        <div class="span3">
+					      		<%= image_tag("icon2.png", :alt => "icon2") %>
+					          <h4>Smash45</h4>
+					          <p>Every January we have a conference for students in the GTA and across Canada to get together and build startups over 45 hours.</p>
+					       </div>
+					        
+					        <div class="span3">
+					        	<%= image_tag("icon4.png", :alt => "icon4") %>
+					          <h4>Discovery Network</h4>
+					          <p>UpStart helps UTSC students connect with potential co-founders </p>
+					        </div>
+					    </div>
+				  	</div>
+			  	</section>
+
+			  	
+			  	<section>
+			  		<div id="event">
+			  			<div class="row-fluid">
+			  				<div class="span6">
+			  					<h4>Upcoming Events</h4>
+			  					<div class="block">
+			  						<h3>Name of Event</h3>
+			  						<p>Date</p>
+			  						<p>Register Now</p>
+			  						<br />
+			  						<h3>Name of Event</h3>
+			  						<p>Date</p>
+			  						<p>Register Now</p>
+			  						<br />
+			  						<h3>Name of Event</h3>
+			  						<p>Date</p>
+			  						<p>Register Now</p>
+			  					</div>
+			  				</div>
+			  				<div class="span6">
+			  					<h4>Sign Up For Our Newsletter</h4>
+			  					<div class="block">
+			  						<%= form_tag("/search", :method => "get") do %>
+			  							<%= label_tag(:name, "First Name") %>
+			  							<%= text_field(:person, :name) %>
+			  							<%= label_tag(:address, "Email") %>
+			  							<%= email_field(:user, :address) %>
+			  							<br />
+			  							<%= submit_tag("Search", :class => "btn") %>
+			  						<% end %>
+			  					</div>
+			  				</div>
+			  			</div>
+			  		</div>
+			  	</section>
+
+
+		</div>
+	        		
+	</div>

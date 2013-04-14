@@ -1,0 +1,405 @@
+/* ROCKETSTART BUILT WITH RUBY ON RAILS AND BOOTSTRAP BY KAREEM KWONG */
+
+@import 'bootstrap';
+@import 'bootstrap-responsive';
+
+/*
+HTML5 Reset :: style.css
+----------------------------------------------------------
+We have learned much from/been inspired by/taken code where offered from:
+Eric Meyer :: http://meyerweb.com
+HTML5 Doctor :: http://html5doctor.com
+and the HTML5 Boilerplate :: http://html5boilerplate.com
+-------------------------------------------------------------------------------*/
+
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video, details, summary {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+vertical-align: baseline;
+background: transparent;
+}	
+
+/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
+
+article, aside, figure, footer, header, hgroup, nav, section, details, summary {display: block;}
+
+/* Responsive images and other embedded objects
+Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+If this default setting for images is causing issues, you might want to replace it with a .responsive class instead. */
+img,
+object,
+embed {max-width: 100%;}
+
+/* force a vertical scrollbar to prevent a jumpy page */
+html {overflow-y: scroll;}
+
+/* we use a lot of ULs that aren't bulleted.
+don't forget to restore the bullets within content. */
+ul {list-style: none;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {content: ''; content: none;}
+
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+
+del {text-decoration: line-through;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+
+/* tables still need cellspacing="0" in the markup */
+table {border-collapse: collapse; border-spacing: 0;}
+th {font-weight: bold; vertical-align: bottom;}
+td {font-weight: normal; vertical-align: top;}
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+input, select {vertical-align: middle;}
+
+pre {
+white-space: pre; /* CSS2 */
+white-space: pre-wrap; /* CSS 2.1 */
+white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+word-wrap: break-word; /* IE */
+}
+
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom;}
+.ie7 input[type="checkbox"] {vertical-align: baseline;}
+.ie6 input {vertical-align: text-bottom;}
+
+select, input, textarea {font: 99% sans-serif;}
+
+table {font-size: inherit; font: 100%;}
+
+small {font-size: 85%;}
+
+strong {font-weight: bold;}
+
+td, td img {vertical-align: top;}
+
+/* Make sure sup and sub don't screw with your line-heights
+gist.github.com/413930 */
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+
+/* hand cursor on clickable elements */
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+button {cursor: pointer;}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {margin: 0;}
+
+/* make buttons play nice in IE */
+button {width: auto; overflow: visible;}
+ 
+/* scale images in IE7 more attractively */
+.ie7 img {-ms-interpolation-mode: bicubic;}
+
+/* prevent BG image flicker upon hover */
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+
+/* ========= ROCKETSTART STYLES BEGIN ======= */
+
+/* Font family */
+
+body, html {
+	height: 100%;
+	font: 100%/1.4 lucida sans unicode, lucida sans, helvetica, arial, sans-serif;
+}
+
+/* HEADINGS */
+h1, h2, h3, h4 ,h5 {
+	font-family: 'lucida sans unicode', 'lucida grande', arial, sans-serif;
+	font-weight: normal;
+	margin-top: 0px;
+	letter-spacing: -1px;
+
+}
+
+h1 {
+	margin-bottom: 0.2em;
+	font-size: 6em;
+	line-height: 1.4;
+}
+
+h2 {
+	color: #222;
+	margin-bottom: .5em;
+	margin-top: .5em;
+	font-size: 2.75em;
+	line-height: 1.2;
+}
+
+h3 { 
+color: #333;
+margin-bottom : 0.3em;
+letter-spacing: -1px;
+font-size : 1.75em; /* 28 / 16 */
+line-height : 1.3; }
+
+
+h4 { 
+color: #444;
+margin-bottom : 0.5em;
+font-size : 1.5em; /* 24 / 16  */
+line-height : 1.25; }
+
+h5 { 
+color: #555;
+margin-bottom : 1.25em;
+font-size : 1em; /* 20 / 16 */ }
+
+h6 { 
+color: #666;
+font-size : 1em; /* 16 / 16  */ }
+
+/* Links */
+
+a {
+	color: #000;
+}
+a:hover {
+	color: #f9f9f9;
+	text-decoration: none;
+}
+
+/* buttons */
+.btn {
+	font: bold 1em helvetica, arial, sans-serif;
+	color: #fff;
+	padding: 10px 20px 10px 20px;
+	text-transform: uppercase;
+	background-image: none !important;
+	background-color: #F4641B;
+	box-shadow: none !important;
+	border: 0 !important;
+	text-shadow: none !important;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn.disabled,
+.btn[disabled] {
+  color: #F4641B;
+  background-color: #FEDA60;
+  transition: linear 0.3s;
+  }
+
+.search-query {
+	margin-right: 1em;
+	border-radius: 0 !important;
+}
+
+input[type=text] {
+	width: 45%;
+}
+
+/* Forms */
+#mainsearch {
+	margin-top: 1em;
+}
+
+/* Navigation Bar */
+
+.navbar {
+	width: 100%;
+	background: none !important;
+	box-shadow: 0 !important;
+	border: 0 !important;
+	
+}
+
+.navbar .nav > li > a {
+  float: none;
+  padding: 10px 15px 10px;
+  color: #343838;
+  text-decoration: none;
+}
+
+.navbar-inner {
+	background: none !important;
+	font: 0.9em helvetica, arial, sans-serif;
+	padding-top: 0.5em;
+	min-height: 50px;
+	border: 0 !important;
+	box-shadow: none !important;
+}
+
+.navbar-inner ul {
+	padding-top: 1em;
+	font: 1em helvetica, arial, sans-serif;
+}
+
+.navbar-inner li {
+	font-weight: bold;
+}
+
+
+
+.navbar-inverse .nav .active > a {
+	background: 0 !important;
+	color: #333 !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+.navbar-inverse .nav > li > a:hover {
+	color: #fff;
+}
+
+.navbar-inner .nav {
+	font: 1.2em helvetica;
+}
+
+
+/* Tags */
+.tag-primary {
+	width: 200px;
+	background: #f9f9f9;
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 1.5em;
+}
+
+/* Main styles */
+ #wrap {
+   min-height: 100%;
+   height: auto !important;
+   height: 100%;
+   margin: 0 auto -130px;
+}
+
+.row-fluid {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.row {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.single {
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 1em
+}
+#main {
+	background: #f9f9f9;
+}
+
+#head {
+	background: image-url('banner2.jpg') no-repeat;
+	background-size: cover;
+	padding: 100px 30px 0 30px;
+}
+
+.contentbox {
+	min-height: 250px;
+	background: #f9f9f9;
+}
+
+#mainbox {
+	margin-bottom: 4em;
+	padding: 1em;
+	background: rgb(255, 255, 255);
+	background: rgba(255, 255, 255, 0.8);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+
+}
+
+
+#about {
+	font: 1em helvetica;
+	min-height: 250px;
+	height: 100%;
+	background: #FFF;
+	padding: 60px;
+	text-align: center;
+}
+
+#event {
+	min-height: 500px;
+	background: image-url('ps_neutral.png');
+	padding: 60px;
+	text-align: left;
+}
+
+.brand {
+	background: image-url('img/logo.png') no-repeat;
+	width: 160px;
+	height: auto;
+	text-indent: -999px;
+	margin-bottom: 1em;
+}
+
+.block {
+	height: 100%;
+	background: #fff;
+	padding: 10px;
+	margin-right: 10px;
+}
+
+/* Footer */
+#footercontainer {
+	position: relative;
+	margin-top: 40px;
+	font: 1.2em helvetica, arial, sans-serif;
+   	min-height: 180px;
+   	background: #1C1D18 image-url('broken_noise.png');
+   	padding: 50px;
+}
+
+#footercontainer h5 {
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 0.5em;
+}
+
+#footercontainer li {
+	letter-spacing: 0.1em;
+	margin-bottom: 0.2em;
+
+}
+
+#footercontainer a {
+	color: #fff;
+}
+
+#footercontainer a:hover {
+	color: #69D2E7;
+}
+      
+@media (max-width: 767px) {
+   #footer {
+     margin-left: -20px;
+     margin-right: -20px;
+     padding-left: 20px;
+     padding-right: 20px;
+ 	}
+}
+
+#credit {
+	margin-top: 3em;
+	text-align: center;
+}

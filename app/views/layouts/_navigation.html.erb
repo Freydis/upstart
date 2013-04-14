@@ -1,0 +1,23 @@
+<div class="navbar navbar-static-top">
+	<div class="navbar-inner">
+		<div class="row-fluid">
+			<%= link_to(image_tag("logo.png", :alt => "logo", :class => "brand"), root_path) %>
+							
+			<ul class="nav">
+				<li class="active"><%= link_to "Home", root_path %></li>
+				<li><%= link_to "About", about_path %></li>
+				<li><a href="#">Programs</a></li>
+				<li><a href="#">Conference</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+			</ul>
+			
+			<form id="mainsearch" class="navbar-search pull-right">
+				<input type="text" class="search-query" placeholder="search">
+				<button type="submit" class="btn">Search</button>
+			</form>
+		
+		</div>
+	</div>
+</div>
