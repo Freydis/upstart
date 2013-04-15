@@ -4,7 +4,7 @@ gem 'rails', '3.2.13'
 gem 'jquery-rails'
 gem 'devise'
 gem 'simple_form'
-gem 'sass-rails',   '~> 3.2.3'
+
 
 
 # Bundle edge Rails instead:
@@ -24,6 +24,7 @@ end
 # in production environments by default.
 group :assets do
   gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails',   '~> 3.2.3'
   gem 'bootstrap-sass', '~> 2.2.2.0'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
