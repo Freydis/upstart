@@ -4,4 +4,10 @@ class PagesController < ApplicationController
 
   def about
   end
+
+  def event
+  end
+
+  def contact
+  end
 end

@@ -1,6 +1,8 @@
 Upstart::Application.routes.draw do
   root :to => "pages#home"
   get 'about' => 'pages#about'
+  get 'event' => 'pages#event'
+  get 'contact' => 'pages#contact'
 
 
   # The priority is based upon order of creation:

@@ -127,9 +127,8 @@ body, html {
 h1, h2, h3, h4 ,h5 {
 	font-family: 'lucida sans unicode', 'lucida grande', arial, sans-serif;
 	font-weight: normal;
-	margin-top: 0px;
+	margin-top: 1em;
 	letter-spacing: -1px;
-
 }
 
 h1 {
@@ -169,13 +168,25 @@ h6 {
 color: #666;
 font-size : 1em; /* 16 / 16  */ }
 
+/* TYPOGRAPHY */
+
+.textbox {
+	margin-bottom: 1em;
+
+	p {
+	margin-bottom: 1em;
+	}
+}
+
+
 /* Links */
 
 a {
-	color: #000;
+	font-weight: bold;
+	color: #040004;
 }
 a:hover {
-	color: #f9f9f9;
+	opacity: 0.8;
 	text-decoration: none;
 }
 
@@ -241,19 +252,16 @@ input[type=text] {
 	min-height: 50px;
 	border: 0 !important;
 	box-shadow: none !important;
-}
 
-.navbar-inner ul {
-	padding-top: 1em;
-	font: 1em helvetica, arial, sans-serif;
-}
-
-.navbar-inner li {
+	li {
 	font-weight: bold;
+	}
+
+	ul {
+	padding-top: 2em;
+	font: 1em helvetica, arial, sans-serif;
+	}
 }
-
-
-
 .navbar-inverse .nav .active > a {
 	background: 0 !important;
 	color: #333 !important;
@@ -298,7 +306,7 @@ input[type=text] {
 }
 
 .single {
-	width: 80%;
+	width: 70%;
 	margin: 0 auto;
 	padding-top: 1em
 }
@@ -307,15 +315,17 @@ input[type=text] {
 }
 
 #head {
-	background: image-url('banner2.jpg') no-repeat;
+	background: image-url('banner1.jpg') no-repeat;
 	background-size: cover;
-	padding: 100px 30px 0 30px;
+padding: 6.25em 1.875em 0 1.875em;
+	#rocket {
+		background: image-url('rocket.png') no-repeat;
+		margin-left: 40em;
+		width: 230px;
+		height: 240px;
+	}
 }
 
-.contentbox {
-	min-height: 250px;
-	background: #f9f9f9;
-}
 
 #mainbox {
 	margin-bottom: 4em;
@@ -325,7 +335,6 @@ input[type=text] {
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-
 }
 
 
@@ -358,7 +367,44 @@ input[type=text] {
 	background: #fff;
 	padding: 10px;
 	margin-right: 10px;
+	margin: 0 0.625em 5em 0;
 }
+
+/* Content boxes */
+.contentbox {
+	background: #F7F0BA;
+	padding: 6.25em 1.875em 4em 1.875em;
+
+}
+
+.secondarybox {
+	width: 40%;
+	background: rgb(255, 255, 255);
+	background: rgba(255, 255, 255, 0.8);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 2em;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#aboutbox {
+	background: image-url('about.jpg');
+	background-size: cover;
+	text-align: center;
+	padding-top: 2em;
+}
+
+#eventbox {
+	background: image-url('event.jpg');
+	background-size: cover;
+}
+
+#contactbox {
+	background: image-url('ps_neutral.png');
+}
+
 
 /* Footer */
 #footercontainer {
@@ -368,26 +414,27 @@ input[type=text] {
    	min-height: 180px;
    	background: #1C1D18 image-url('broken_noise.png');
    	padding: 50px;
-}
 
-#footercontainer h5 {
+   	h5 {
 	color: #fff;
 	text-transform: uppercase;
 	margin-bottom: 0.5em;
-}
+	}
 
-#footercontainer li {
+	li {
 	letter-spacing: 0.1em;
 	margin-bottom: 0.2em;
 
-}
+	}
 
-#footercontainer a {
+	a {
 	color: #fff;
-}
+	font-weight: normal;
+	}
 
-#footercontainer a:hover {
+	a:hover {
 	color: #69D2E7;
+	}
 }
       
 @media (max-width: 767px) {

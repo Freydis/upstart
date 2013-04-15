@@ -1,7 +1,30 @@
-<h1>About</h1>
-<p>
-  <%= link_to "One Month Rails", "http://onemonthrails.com" %>
-  is a project to teach 
-  <%= link_to "Ruby on Rails", "http://rubyonrails.org" %>
-  in one month. This is the sample application.
-</p>
+<% title "About Us" %>
+
+<div id="aboutbox" class="contentbox">
+	<div class="row">
+		<div class="secondarybox">
+			<h3>"I think a simple rule of business is, if you do the things that are easier first, then you can actually make a lot of progress."</h3>
+			<small>- Mark Zuckerberg, Founder & CEO of Facebook</small>
+		</div>
+	</div>
+</div>
+
+<section>
+	<div class="single">
+			<h2><%= yield(:title) %></h2>
+
+			<p>UpStart is more then just a student organization: It's a movement - A movement that will spark Entrepreneurship and Innovation at the University of Toronto Scarborough.</p>
+
+			<p>Based in the Ideation + Experiential Learning Centre (The Hub) in UTSC, UpStart provide the workshops and resources needed to fuel entrepreneurship and innovation on campus. Our goal is to foster collaboration, launch student ideas and embrace continuous learning.</p>
+		
+
+			<h3>The Vision</h3>
+			<p>UpStart strives to create the best platform for students to launch their business ideas and to pursue their passions.</p>
+		
+			<h3>Our Team</h3>
+			<em>Coming Soon!</em>
+			<p>We're always looking for amazing people to be part of our team! <button href="#" class="btn">Apply today!</button></p> 
+		
+	</div>
+</section>
+		        	
