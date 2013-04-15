@@ -3,6 +3,7 @@ Upstart::Application.routes.draw do
   get 'about' => 'pages#about'
   get 'event' => 'pages#event'
   get 'contact' => 'pages#contact'
+  get 'resource' => 'pages#resource'
 
 
   # The priority is based upon order of creation:
