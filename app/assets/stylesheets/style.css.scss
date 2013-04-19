@@ -170,13 +170,10 @@ font-size : 1em; /* 16 / 16  */ }
 
 /* TYPOGRAPHY */
 
-.textbox {
+p {
 	margin-bottom: 1em;
-
-	p {
-	margin-bottom: 1em;
-	}
 }
+	
 
 
 /* Links */
@@ -308,7 +305,8 @@ input[type=text] {
 .single {
 	width: 70%;
 	margin: 0 auto;
-	padding-top: 1em
+	padding: 1em 2em;
+	background: #f9f9f9;
 }
 #main {
 	background: #f9f9f9;
@@ -317,7 +315,7 @@ input[type=text] {
 #head {
 	background: image-url('banner1.jpg') no-repeat;
 	background-size: cover;
-padding: 4em 1.875em 0 1.875em;
+	padding: 4em 1.875em 0 1.875em;
 	#rocket {
 		background: image-url('rocket.png') no-repeat;
 		margin-left: 5em;
@@ -374,6 +372,7 @@ padding: 4em 1.875em 0 1.875em;
 .contentbox {
 	background: #F7F0BA;
 	padding: 4em 1.875em 4em 1.875em;
+	margin-bottom: 1em;
 
 }
 
