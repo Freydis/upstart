@@ -24,10 +24,11 @@
 
                   <form class="navbar-search form-search pull-right" action="">
                     <div class="input-append">
-                      <input type="text" class="search-query span2" placeholder="Search">
-                      <button type="submit" class="btn">
-                        <i class="fui-search"></i>
-                      </button>
+                      <%= form_tag("/search", :method => "get") do %>
+                        <%= text_field_tag(:q) %>
+                        <%= submit_tag("Search", :class => "btn") %>
+                      <% end %> 
+                      
                     </div>
                   </form>
                 </div><!--/.nav-collapse -->
