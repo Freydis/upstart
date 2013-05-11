@@ -129,8 +129,8 @@ input[type="color"],
 }
 
 .navbar li:hover {
-	color: #FFFFFF;
-	background: #FA6900;
+	color: #F5F5F5;
+	background: #F5F5F5;
 }
 
 
@@ -140,18 +140,46 @@ input[type="color"],
 	border: 0 !important;
 	box-shadow: none !important;
 }
+/* Footer Styles */
 
 
 .footer {
-	color: #FFF;
-	font-family: helvetica, arial, sans-serif;
-	background: #2B2823;
-	height: 135px;
-	padding: 10px;
+	position: relative;
+	font: 1.2em helvetica, arial, sans-serif;
+   	min-height: 110px;
+   	background: #1C1D18 image-url('broken_noise.png');
+   	padding: 50px;
+}
+
+.footer h5 {
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 0.1em;
+}
+
+.footer ul {
+	display: inline;
+	list-style: none;
+
 }
 
 .footer li {
-	display: inline;
+	letter-spacing: 0.1em;
+	margin-bottom: 0.2em;
+}
+
+.footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer a:hover {
+	opacity: 0.7;
+}
+
+#credit {
+	text-align: center;
+	margin-top: 1em;
 }
 
 #banner {
@@ -176,12 +204,11 @@ input[type="color"],
 }
 #about-row {
 	background: #FFF image-url('ps_neutral.png');
-	text-align: center;
 	padding: 1.5em 1em 1em 1em;
 	height: auto;
 
-	.span3 {
-		text-align: left;
+	.container {
+		text-align: center;
 	}
 }
 #email-row {

@@ -75,4 +75,8 @@ Upstart::Application.configure do
 
 # Precompile additional assets
   config.assets.precompile += %w( .svg .eot .woff .ttf )
+
+# Heroku Error With Precompiling Assets
+  config.assets.initialize_on_precompile = false
+
 end
