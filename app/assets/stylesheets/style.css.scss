@@ -14,6 +14,10 @@ html, body {
 
 }
 
+/* Links */
+a, a:hover {
+	text-decoration: none;
+}
 
 
 /* Buttons */
@@ -140,6 +144,14 @@ input[type="color"],
 	border: 0 !important;
 	box-shadow: none !important;
 }
+
+.dropdown-menu {
+	background: #f9f9f9;
+}
+
+.dropdown-menu li a:hover {
+	background: #20293F;
+}
 /* Footer Styles */
 
 
@@ -171,7 +183,6 @@ input[type="color"],
 
 .footer a {
 	color: #fff;
-	text-decoration: none;
 }
 
 .footer a:hover {
