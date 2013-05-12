@@ -220,6 +220,16 @@ input[type="color"],
 	text-align: center;
 	padding: 1em;
 }
+
+.main-icons {
+	transition: linear 0.5s;
+}
+
+.main-icons:hover {
+transform:rotate(40deg);
+-ms-transform:rotate(7deg); /* IE 9 */
+-webkit-transform:rotate(7deg); /* Safari and Chrome */
+} 
 /* Layout classes */
 .single {
 	background: #f9f9f9 image-url('ps_neutral.png');
