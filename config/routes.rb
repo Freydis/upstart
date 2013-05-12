@@ -5,8 +5,8 @@ Upstart::Application.routes.draw do
   get 'contact' => 'pages#contact'
   get 'resource' => 'pages#resource'
   get 'jobs' => 'pages#jobs'
-  get 'test' => 'pages#test'
-
+  get 'school' => 'pages#school'
+  get 'discovery' => 'pages#discovery'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

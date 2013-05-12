@@ -13,4 +13,10 @@ class PagesController < ApplicationController
 
   def resources
   end
+
+  def school
+  end
+
+  def discovery
+  end
 end
