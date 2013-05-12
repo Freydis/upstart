@@ -113,12 +113,13 @@ input[type="color"],
 }
 
 .navbar {
-	background: #f9f9f9;
+	background: #F9F9F9;
 	font-size: 1.1em;
 	font-weight: bold;
 	padding: 0.5em 1em 1em 1em;
 	text-transform: uppercase;
 	background-gradient: none !important;
+	margin-bottom: 0;
 
 	.container {
 		padding-top: 2em;
@@ -219,6 +220,7 @@ input[type="color"],
 .single {
 	background: #f9f9f9 image-url('ps_neutral.png');
 	padding: 2em;
+
 }
 
 .content {
