@@ -6,6 +6,7 @@
 
 html, body {
 	width: 100%;
+	height: 100%;
 	font-family: "lato", "lucida sans unicode", lucida sans, helvetica, sans-serif;
 	font-size: 14px;
 	line-height: 1.231;
@@ -162,6 +163,8 @@ input[type="color"],
    	min-height: 110px;
    	background: #1C1D18 image-url('broken_noise.png');
    	padding: 1.5em 1em 1em 1em;
+	margin-top: -110px; /* negative value of footer height */
+	clear:both;
 
 }
 
@@ -208,7 +211,29 @@ input[type="color"],
  	padding: 1em;
 }
 
-/* Rows */
+/* Layout classes */
+.single {
+	background: #f9f9f9 image-url('ps_neutral.png');
+	padding: 2em;
+}
+
+.content {
+	background: #fff;
+	width: 80%;
+	margin: 0 auto;
+	min-height: 100%;
+	padding: 1em;
+}
+
+#wrap {
+	min-height: 100%;
+}
+
+#main {
+	overflow: auto;
+	padding-bottom: 110px;
+}
+/* Home Page Layout */
 
 #about-row {
 	background: #FFF image-url('ps_neutral.png');
@@ -218,7 +243,6 @@ input[type="color"],
 
 
 }
-
 
 
 #email-row {
