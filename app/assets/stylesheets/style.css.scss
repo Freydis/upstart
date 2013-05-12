@@ -80,7 +80,7 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
  {
-  width: 250px;
+  width: 200px;
   border: 2px solid #bdc3c7;
   color: #2B2823;
   font-size: 14px;
@@ -201,7 +201,7 @@ input[type="color"],
 	height: 300px;
 }
 
-#block {
+#box {
 	color: #000;
  	background: rgba(255,255,255,0.4);
  	margin-top: 2em;
@@ -209,21 +209,18 @@ input[type="color"],
 }
 
 /* Rows */
-#intro-row {
-	padding: 1em;
-	background: #f9f9f9;
-	text-align: center;
-	border-bottom: 1px solid #E9E9E9;
-}
+
 #about-row {
 	background: #FFF image-url('ps_neutral.png');
 	padding: 1.5em 1em 1em 1em;
 	height: auto;
+	text-align: center;
 
-	.container {
-		text-align: center;
-	}
+
 }
+
+
+
 #email-row {
 	background: #f8f8f8;
 	padding: 1em 0.5em 0 0.5em;
