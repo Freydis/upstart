@@ -7,5 +7,6 @@ Upstart::Application.routes.draw do
   get 'jobs' => 'pages#jobs'
   get 'school' => 'pages#school'
   get 'discovery' => 'pages#discovery'
+  get 'forum' => 'pages#forum'
 
   end

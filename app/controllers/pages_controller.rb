@@ -19,4 +19,7 @@ class PagesController < ApplicationController
 
   def discovery
   end
+
+  def forum
+  end
 end
