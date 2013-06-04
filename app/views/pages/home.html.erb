@@ -38,11 +38,20 @@
       <div class="row">
         <div class="center">
           <div class="span12">
-          <h4>Get the best news in your inbox</h4>
-              <%= form_tag do %>
-                <%= email_field(:user, :address) %>
-                <%= submit_tag("Go", :class => "btn btn-primary btn-wide") %>
-              <% end %>
+
+          <!-- Begin MailChimp Signup Form -->
+            
+            <form action="http://upstartutsc.us7.list-manage1.com/subscribe/post?u=b83e518f4825ca0a285e38d08&amp;id=69e198b1cd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <h4>Get the best news in your inbox!</h4>
+              <label for="mce-EMAIL">Email Address</label>
+              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>  <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-wide"></div>
+            </form>
+            </div>
+<!--End mc_embed_signup-->
           </div>
         </div>
       </div>
