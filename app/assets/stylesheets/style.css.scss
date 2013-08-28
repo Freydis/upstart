@@ -12,7 +12,6 @@ html, body {
 	line-height: 1.5;
 	padding: 0;
 	margin: 0;
-
 }
 
 /* Links */
@@ -108,31 +107,34 @@ input[type="color"],
 
 .brand {
 	background: image-url('logo.png') no-repeat;
-	width: 150px;
-	height: 50px;
+  width: 170px;
+  height: 35px;
+  margin-top: 1em;
 	text-indent: -999px;
 }
 
 .navbar {
-	background: #F9F9F9;
+	background: #FF4800;
 	font-size: 1.1em;
-	font-weight: bold;
-	padding: 0.5em 1em 1em 1em;
 	text-transform: uppercase;
 	background-gradient: none !important;
 	margin-bottom: 0;
 
-	.container {
-		padding-top: 2em;
-	}
+	
 }
 
 .navbar li {
-	margin-left: 0.5em;
+    margin-top: 1em;
 }
 
-.navbar li a {
-	color: #000;
+.navbar .nav > li > a {
+    float: none;
+    line-height: 19px;
+    font-weight: bold;
+    padding-bottom: 0.8em;
+    text-decoration: none;
+    text-shadow: none;
+    color:  #fff;
 }
 
 .navbar li:hover {
@@ -141,9 +143,10 @@ input[type="color"],
 }
 
 
+
 .navbar-inner {
 	background: none !important;
-	min-height: 50px;
+	min-height: 20px;
 	border: 0 !important;
 	box-shadow: none !important;
 }
@@ -163,17 +166,16 @@ input[type="color"],
 	position: relative;
 	font: 1.2em helvetica, arial, sans-serif;
    	min-height: 110px;
-   	background: #1C1D18 image-url('broken_noise.png');
-   	padding: 1.5em 1em 1em 1em;
+   background: #F4F4F4;
+  padding: 1.5em 1em 1em 1em;
 	margin-top: -110px; /* negative value of footer height */
 	clear:both;
 
 }
 
 .footer h5 {
-	color: #fff;
+	color: #000;
 	text-transform: uppercase;
-	margin-bottom: 0.1em;
 }
 
 .footer ul {
@@ -188,7 +190,7 @@ input[type="color"],
 }
 
 .footer a {
-	color: #fff;
+	color: #c9c9c9;
 }
 
 .footer a:hover {
@@ -201,12 +203,8 @@ input[type="color"],
 }
 
 #banner {
-	color: #FFF;
-	background: #20293F image-url('banner1.jpg');
-	min-height: 300px;
-
+  width: 100%;
 }
-
 #box {
 	color: #000;
  	background: rgba(255,255,255,0.4);
@@ -270,15 +268,13 @@ transform:rotate(40deg);
 
 
 #email-row {
-	background: #f8f8f8;
+  color: #493831;
+	background: #fff;
 	padding: 1em 0.5em 0 0.5em;
+  min-height: 200px;
 	text-align: center;
 	border-top: 1px solid #E9E9E9;
 
-}
-
-.center {
-	margin: 0 auto;
 }
 
 

@@ -1,14 +1,40 @@
-  <div id="banner">
-    <div class="container">
-      <div id="box" class="span7">
-        <h3>We Like To Think We're In The Business of Disruption</h3>
-        <p>UpStart is creating entrepreneurial experiences to prepare our students for the harsh, desolate wasteland that is the real world. We're just trying to re-imagine business education across the country. </br> <em>Based in the University of Toronto Scarborough.</em></p>
-        <%= link_to("Learn More", about_path, :class => "btn-secondary") %>
-      </div>
-      <div class="span5">
-      </div>
+
+<div class="gallery autoplay items-3">
+    <div id="item-1" class="control-operator"></div>
+    <div id="item-2" class="control-operator"></div>
+    <div id="item-3" class="control-operator"></div>
+
+    <figure class="item">
+      <div class="container">
+        <div class="row">
+      <h1>We Like To Think We're In The Business of Disruption</h1>
+      <p>UpStart is creating entrepreneurial experiences to prepare our students for the harsh, desolate wasteland that is the real world. We're just trying to re-imagine business education across the country. Based in the University of Toronto Scarborough.</p>
+       <%= link_to("Learn More", about_path, :class => "btn-secondary") %>
+       </div>
+       </div>
+    </figure>
+
+    <figure class="item">
+      <h1>We Host Awesome Workshops</h1>
+      <p>We're working with local partners to bring incredible skill-based workshops to UTSC.</p>
+      <%= link_to("See The Upcoming Workshops", event_path, :class => "btn-secondary") %>
+
+    </figure>
+
+    <figure class="item">
+      <h1>A Great Team Is Everything</h1>
+      <p>None of this would be possible without our fantastic team who work hard to make the school a better place for learning.</p>
+      <%= link_to("Meet The Team", about_path, :class => "btn-secondary") %>
+    </figure>
+
+    <div class="controls">
+      <a href="#item-1" class="control-button">•</a>
+      <a href="#item-2" class="control-button">•</a>
+      <a href="#item-3" class="control-button">•</a>
     </div>
   </div>
+
+  
 
   <div id="about-row">
     <div id="block" class="container">
