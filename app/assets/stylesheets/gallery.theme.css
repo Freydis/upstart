@@ -17,10 +17,9 @@
 }
 .gallery .item {
   color: #fff;
-  height: 400px;
+  min-height: 400px;
   overflow: hidden;
   text-align: center;
-  background: #04122D;
 }
 .gallery .controls {
   position: absolute;
@@ -35,4 +34,17 @@
   text-align: center;
   text-decoration: none;
   transition: color .1s;
+}
+
+.first {
+  background: #04122D;
+
+}
+
+.second {
+  background: #73C16F;
+}
+
+.third {
+  background: #FF9F80;
 }
